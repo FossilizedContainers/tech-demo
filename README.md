@@ -10,7 +10,10 @@ Description goes here
 
 Challenges addressed: Installing the CLI, user prompts for CLI, containerization, and documentation
 
-1. Download the file titled "presto-0.0.1-py3-none-any.whl" from presto/dist
+1. Download the file titled "presto-0.0.1-py3-none-any.whl" from presto/dist. You can use the following command on linux to download it
+~~~bash
+wget https://github.com/FossilizedContainers/tech-demo/raw/master/presto/dist/presto-0.0.1-py3-none-any.whl
+~~~
 2. `cd` into the folder containing the wheel distribution file
 3. Run the following command to install the presto package
 ~~~bash
@@ -19,14 +22,14 @@ $ pip install presto-0.0.1-py3-none-any.whl
 
 #### Creating the container
 1. Run the following command
-~~~bash 
+~~~bash
 $ presto create
 ~~~
 2. Enter the image you would like your container to use
 3. Enter the programming language that you used
-4. View the dockerfile created 
+4. View the dockerfile created
    1. Example of a dockerfile:
-   ~~~bash 
+   ~~~bash
    FROM python:latest
 
    RUN pip install flask
@@ -34,10 +37,33 @@ $ presto create
 
    COPY server.py /
    COPY static/ /
-   
+
    EXPOSE 80
    CMD python /server.py
     ~~~
-I believe you would start here Emily
+5. Download the demonstration Dockerfile from our github.
+   ~~~bash
+   wget
+   ~~~
+6. Run the following command
+   ~~~bash
+   presto run
+   ~~~
 
+7. You should have seen your container running
+   1. Example output:
+   ~~~bash
+   Building image from Dockerfile...
+
+   Finished building image...
+
+   Running the container...
+
+   Hello World!
+   ~~~
+
+8. Now run the following command to clean up the container to free up resources
+  ~~~bash
+  presto clean
+  ~~~
 ## Demonstration 3
