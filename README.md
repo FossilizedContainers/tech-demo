@@ -10,7 +10,7 @@ Description goes here
 
 Challenges addressed: Installing the CLI, user prompts for CLI, containerization, and documentation
 
-1. Download the file titled "presto-0.0.1-py3-none-any.whl" from above
+1. Download the file titled "presto-0.0.1-py3-none-any.whl" from presto/dist
 2. `cd` into the folder containing the wheel distribution file
 3. Run the following command to install the presto package
 ~~~bash
