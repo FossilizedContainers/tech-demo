@@ -25,21 +25,13 @@ $ pip install presto-0.0.1-py3-none-any.whl
 ~~~bash
 $ presto create
 ~~~
-2. Enter the image you would like your container to use
-3. Enter the programming language that you used
+2. Enter the OS you would like your container to use
+3. Enter the message you would like to display
 4. View the dockerfile created
    1. Example of a dockerfile:
    ~~~bash
-   FROM python:latest
-
-   RUN pip install flask
-   RUN pip install LiPD
-
-   COPY server.py /
-   COPY static/ /
-
-   EXPOSE 80
-   CMD python /server.py
+   FROM alpine
+   CMD ["echo", "Hello World!"]
     ~~~
 5. Download the demonstration Dockerfile from our github.
    ~~~bash
