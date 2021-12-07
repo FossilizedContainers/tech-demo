@@ -43,7 +43,7 @@ $ presto create
     ~~~
 5. Download the demonstration Dockerfile from our github.
    ~~~bash
-   wget
+   wget https://raw.githubusercontent.com/FossilizedContainers/tech-demo/master/C4/Dockerfile
    ~~~
 6. Run the following command
    ~~~bash
