@@ -2,11 +2,11 @@
 
 Description goes here
 
-##Demonstration 1
+## Demonstration 1
 
-##Demonstration 2
+## Demonstration 2
 
-###Creating a Container with the CLI
+### Creating a Container with the CLI
 
 Challenges addressed: Installing the CLI, user prompts for CLI, containerization, and documentation
 
@@ -17,7 +17,7 @@ Challenges addressed: Installing the CLI, user prompts for CLI, containerization
 $ pip install presto-0.0.1-py3-none-any.whl
 ~~~
 
-####Creating the container
+#### Creating the container
 1. Run the following command
 ~~~bash 
 $ presto create
@@ -40,4 +40,4 @@ $ presto create
     ~~~
 I believe you would start here Emily
 
-##Demonstration 3
+## Demonstration 3
