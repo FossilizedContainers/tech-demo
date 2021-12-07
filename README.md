@@ -22,8 +22,8 @@ $ pip install presto-0.0.1-py3-none-any.whl
 ~~~bash 
 $ presto create
 ~~~
-2. Enter the image you would like your container to use when prompted
-3. Enter a message for the container to display
+2. Enter the image you would like your container to use
+3. Enter the programming language that you used
 4. View the dockerfile created 
    1. Example of a dockerfile:
    ~~~bash 
