@@ -75,7 +75,7 @@ Read me to walk through the tech demo and better explain what is going on
 4. Create the image of LMR Turbo
 
   a. docker pull mumbimamb/fossilizedcontainers:latest
-  # takes a bit of time
+  takes a bit of time
 
 5. From the image, run the LMR Turbo model in a container
 
