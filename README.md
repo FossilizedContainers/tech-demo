@@ -23,66 +23,66 @@ Read me to walk through the tech demo and better explain what is going on
 
   h. ```$ conda activate LMRt```
   
-  i. $ conda install -c conda-forge cartopy pyspharm jupyterlab
+  i. ```$ conda install -c conda-forge cartopy pyspharm jupyterlab```
   
-  j. $ pip install LMRt
+  j. ```$ pip install LMRt```
   
-  k. $ sudo apt-get update && sudo apt-get upgrade
+  k. ```$ sudo apt-get update && sudo apt-get upgrade```
 
   l. https://drive.google.com/drive/folders/1UGn-LNd_tGSjPUKa52E6ffEM-ms2VD-N
   
   m. Extract into Downloads directory
   
-  n. $ mkdir testcases
+  n. ```$ mkdir testcases```
   
-  o. $ mv Downloads/PAGES2k_CCSM4_GISTEMP testcases/PAGES2k_CCSM4_GISTEMP
+  o. ```$ mv Downloads/PAGES2k_CCSM4_GISTEMP testcases/PAGES2k_CCSM4_GISTEMP```
 
-  q. $ jupyter notebook
+  q. ```$ jupyter notebook```
   
   r. Run file, then exit Jupyter Notebook
 
-  s. $ conda deactivate
+  s. ```$ conda deactivate```
 
 
 2. Download Ubuntu image from Dockerhub
 
-  a. $ sudo apt-get update
+  a. ```$ sudo apt-get update```
   
-  b. $ sudo apt-get install ca-certificates curl gnupg lsb-release
+  b. ```$ sudo apt-get install ca-certificates curl gnupg lsb-release```
 
-  c. $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  c. ```$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg```
   
-  d. $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  d. ```$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -```
 
   e.* For Linux Mint
-      $  echo \
+      ```$  echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-          xenial \ stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+          xenial \ stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null```
     * For Ubuntu Impish 21.10, Ubuntu Hirsute 21.04, Ubuntu Focal 20.04 (LTS),
       Ubuntu Bionic 18.04 (LTS)
-      $  echo \
+      ```$  echo \
           "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  f. $ sudo apt-get update
+          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null```
+  f. ```$ sudo apt-get update```
 
-  g. $ apt-cache policy docker-ce
-
-  h. $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-
-  i. $ sudo groupadd docker
+  g. ```$ apt-cache policy docker-ce```
   
-  j. $ sudo usermod -aG docker mumbi
-  
-  k. $ newgrp docker
-  
-  l. $ docker run hello-world
+  h. ```$ sudo apt-get install docker-ce docker-ce-cli containerd.io```
 
-  m. docker pull ubuntu
+  i. ```$ sudo groupadd docker```
+  
+  j. ```$ sudo usermod -aG docker mumbi```
+  
+  k. ```$ newgrp docker```
+  
+  l. ```$ docker run hello-world```
+
+  m. ```docker pull ubuntu```
 
 
 3. Create Dockerfile for LMR Turbo model
 
-  a. $ nano Dockerfile
+  a. ```$ nano Dockerfile```
         FROM ubuntu
 
         COPY
@@ -102,7 +102,7 @@ Read me to walk through the tech demo and better explain what is going on
 
 7. View the model
 
-  a. $ jupyter notebook --allow-root
+  a. ```$ jupyter notebook --allow-root```
   
   b. Run all
 
@@ -110,8 +110,8 @@ Read me to walk through the tech demo and better explain what is going on
 
   a. Exit jupyter notebook
   
-  b. $ conda deactivate
-     $ conda deactivate
+  b. ```$ conda deactivate```
+     ```$ conda deactivate```
 
 
 9. Stop and delete the container
