@@ -59,3 +59,22 @@ $ presto create
   presto clean
   ~~~
 ## Demonstration 3
+
+1. Go into the folder for Demonstration 3:
+```
+cd demo3/
+```
+
+2. Start the Python server. This is what will receive the LiPD files and send back the NetCDF files.
+
+```
+python3 ./server.py
+```
+
+1. Start the Python client. This is what will send the LiPD files / Climate Model Parameters and receive the resulting NetCDF file.
+
+```
+python3 ./client.py
+```
+
+4. Verify the files have been properly sent and received.
