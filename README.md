@@ -7,28 +7,38 @@ Read me to walk through the tech demo and better explain what is going on
 1. Downloading the LMR Turbo model
 
   a. $ sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  
   b. $ sudo chmod +x Miniconda3-latest-*.sh && ./Miniconda3-latest-*.sh
 
   c. export PATH="~/miniconda3/bin:$PATH"
      . ~/miniconda3/etc/profile.d/conda.sh
 
   d. $ source ~/.bashrc
+  
   e. $ which conda
 
   f. $ conda create -n LMRt python=3.8
+  
   g. $ If HTTP error, $ conda update conda
 
   h. $ conda activate LMRt
+  
   i. $ conda install -c conda-forge cartopy pyspharm jupyterlab
+  
   j. $ pip install LMRt
+  
   k. $ sudo apt-get update && sudo apt-get upgrade
 
   l. https://drive.google.com/drive/folders/1UGn-LNd_tGSjPUKa52E6ffEM-ms2VD-N
+  
   m. Extract into Downloads directory
+  
   n. $ mkdir testcases
+  
   o. $ mv Downloads/PAGES2k_CCSM4_GISTEMP testcases/PAGES2k_CCSM4_GISTEMP
 
   q. $ jupyter notebook
+  
   r. Run file, then exit Jupyter Notebook
 
   s. $ conda deactivate
