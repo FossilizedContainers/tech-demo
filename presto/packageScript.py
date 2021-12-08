@@ -19,6 +19,30 @@ def create():
     message += click.prompt("Please enter a message for the container to display", type=str)
     print("\nCreating new container...")
 
+
+@cli.command()
+def run():
+    # Build the image
+    print("Building image from Dockerfile...\n")
+    client.images.build(path=".", tag="tech-demo")
+    print("Finished building image...\n")
+
+    # Run the container
+    print("Running the container...\n")
+    cont = client.containers.run("tech-demo", detach=True)
+    print(cont.logs().decode("utf-8"))
+
+# command mostly for testing
+# will stop all containers and prune them
+@cli.command()
+def clean():
+    print("Stopping all containers...\n")
+    for container in client.containers.list():
+        container.stop()
+
+    print("Deleting all containers...\n")
+    client.containers.prune()
+
 # main to initiate variables and group
 def main():
     global client
