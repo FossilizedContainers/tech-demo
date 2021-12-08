@@ -6,22 +6,22 @@ Read me to walk through the tech demo and better explain what is going on
 
 1. Downloading the LMR Turbo model
 
-  a. $ sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  a. ```$ sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
   
-  b. $ sudo chmod +x Miniconda3-latest-*.sh && ./Miniconda3-latest-*.sh
+  b. ```$ sudo chmod +x Miniconda3-latest-*.sh && ./Miniconda3-latest-*.sh```
 
   c. export PATH="~/miniconda3/bin:$PATH"
      . ~/miniconda3/etc/profile.d/conda.sh
 
-  d. $ source ~/.bashrc
+  d. ```$ source ~/.bashrc```
   
-  e. $ which conda
+  e. ```$ which conda```
 
-  f. $ conda create -n LMRt python=3.8
+  f. ```$ conda create -n LMRt python=3.8```
   
-  g. $ If HTTP error, $ conda update conda
+  g. ```$ If HTTP error, $ conda update conda```
 
-  h. $ conda activate LMRt
+  h. ```$ conda activate LMRt```
   
   i. $ conda install -c conda-forge cartopy pyspharm jupyterlab
   
@@ -47,9 +47,11 @@ Read me to walk through the tech demo and better explain what is going on
 2. Download Ubuntu image from Dockerhub
 
   a. $ sudo apt-get update
+  
   b. $ sudo apt-get install ca-certificates curl gnupg lsb-release
 
   c. $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  
   d. $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
   e.* For Linux Mint
@@ -68,8 +70,11 @@ Read me to walk through the tech demo and better explain what is going on
   h. $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
   i. $ sudo groupadd docker
+  
   j. $ sudo usermod -aG docker mumbi
+  
   k. $ newgrp docker
+  
   l. $ docker run hello-world
 
   m. docker pull ubuntu
@@ -98,11 +103,13 @@ Read me to walk through the tech demo and better explain what is going on
 7. View the model
 
   a. $ jupyter notebook --allow-root
+  
   b. Run all
 
 8. Exit the model
 
   a. Exit jupyter notebook
+  
   b. $ conda deactivate
      $ conda deactivate
 
@@ -110,7 +117,9 @@ Read me to walk through the tech demo and better explain what is going on
 9. Stop and delete the container
 
   a. exit
+  
   b. docker container ls -a
+  
   c. docker rm <CONTAINER ID>
 
 10. Recreate the container from the already created image
