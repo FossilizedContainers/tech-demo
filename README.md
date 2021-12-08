@@ -1,6 +1,6 @@
 # Fossilized Containers Tech Demo
 
-Description goes here
+Read me to walk through the tech demo and better explain what is going on
 
 ## Demonstration 1
 
